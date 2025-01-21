@@ -71,7 +71,7 @@ INVENTORY_LOCATION=<INVENTORY_LOCATION>
 #   - CRS_ADDNODE : To add more nodes to the cluster
 #   - CRS_DELETE_NODE : To delete nodes to the cluster
 #-------------------------------------------------------------------------------
-oracle.install.option=
+oracle.install.option=<oracle.install.option>
 #-------------------------------------------------------------------------------
 # Specify the complete path of the Oracle Base.
 #-------------------------------------------------------------------------------
