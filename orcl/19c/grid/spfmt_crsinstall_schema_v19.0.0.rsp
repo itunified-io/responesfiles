@@ -57,7 +57,7 @@ oracle.install.responseFileVersion=/oracle/install/rspfmt_crsinstall_response_sc
 # This is an optional parameter if installing on
 # Windows based Operating System.
 #-------------------------------------------------------------------------------
-INVENTORY_LOCATION=
+INVENTORY_LOCATION=<INVENTORY_LOCATION>
 
 #-------------------------------------------------------------------------------
 # Specify the installation option.
@@ -72,12 +72,12 @@ INVENTORY_LOCATION=
 #   - CRS_ADDNODE : To add more nodes to the cluster
 #   - CRS_DELETE_NODE : To delete nodes to the cluster
 #-------------------------------------------------------------------------------
-oracle.install.option=
+oracle.install.option=<oracle.install.option>
 
 #-------------------------------------------------------------------------------
 # Specify the complete path of the Oracle Base.
 #-------------------------------------------------------------------------------
-ORACLE_BASE=
+ORACLE_BASE=<ORACLE_BASE>
 
 ################################################################################
 #                                                                              #
@@ -95,20 +95,20 @@ ORACLE_BASE=
 #-------------------------------------------------------------------------------
 # The OSDBA_GROUP is the OS group which is to be granted SYSDBA privileges.
 #-------------------------------------------------------------------------------
-oracle.install.asm.OSDBA=
+oracle.install.asm.OSDBA=<oracle.install.asm.OSDBA>
 
 #-------------------------------------------------------------------------------
 # The OSOPER_GROUP is the OS group which is to be granted SYSOPER privileges.
 # The value to be specified for OSOPER group is optional.
 # Value should not be provided if configuring Client Cluster - i.e. storageOption=CLIENT_ASM_STORAGE.
 #-------------------------------------------------------------------------------
-oracle.install.asm.OSOPER=
+oracle.install.asm.OSOPER=<oracle.install.asm.OSOPER>
 
 #-------------------------------------------------------------------------------
 # The OSASM_GROUP is the OS group which is to be granted SYSASM privileges. This
 # must be different than the previous two.
 #-------------------------------------------------------------------------------
-oracle.install.asm.OSASM=
+oracle.install.asm.OSASM=<oracle.install.asm.OSASM>
 
 ################################################################################
 #                                                                              #
@@ -119,26 +119,26 @@ oracle.install.asm.OSASM=
 # Specify the type of SCAN configuration for the cluster
 # Allowed values : LOCAL_SCAN and SHARED_SCAN
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.scanType=
+oracle.install.crs.config.scanType=<oracle.install.crs.config.scanType>
 
 #-------------------------------------------------------------------------------
 # Applicable only if SHARED_SCAN is being configured for cluster
 # Specify the path to the SCAN client data file
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.SCANClientDataFile=
+oracle.install.crs.config.SCANClientDataFile=<oracle.install.crs.config.SCANClientDataFile>
 
 #-------------------------------------------------------------------------------
 # Specify a name for SCAN
 # Applicable if LOCAL_SCAN is being configured for the cluster
 # If you choose to configure the cluster with GNS with Auto assigned Node VIPs(DHCP),then the scanName should be specified in the format of 'SCAN name.Cluster name.GNS sub-domain'
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.gpnp.scanName=
+oracle.install.crs.config.gpnp.scanName=<oracle.install.crs.config.gpnp.scanName>
 
 #-------------------------------------------------------------------------------
 # Specify a unused port number for SCAN service
 #-------------------------------------------------------------------------------
 
-oracle.install.crs.config.gpnp.scanPort=
+oracle.install.crs.config.gpnp.scanPort=<oracle.install.crs.config.gpnp.scanPort>
 
 ################################################################################
 #                                                                              #
@@ -149,7 +149,7 @@ oracle.install.crs.config.gpnp.scanPort=
 # Specify the required cluster configuration
 # Allowed values: STANDALONE, DOMAIN, MEMBERDB, MEMBERAPP
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.ClusterConfiguration=
+oracle.install.crs.config.ClusterConfiguration=<oracle.install.crs.config.ClusterConfiguration>
 
 #-------------------------------------------------------------------------------
 # Specify 'true' if you would like to configure the cluster as Extended, else
@@ -157,7 +157,7 @@ oracle.install.crs.config.ClusterConfiguration=
 #
 # Applicable only for STANDALONE and DOMAIN cluster configuration
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.configureAsExtendedCluster=
+oracle.install.crs.config.configureAsExtendedCluster=<oracle.install.crs.config.configureAsExtendedCluster>
 
 
 #-------------------------------------------------------------------------------
@@ -165,8 +165,7 @@ oracle.install.crs.config.configureAsExtendedCluster=
 #
 # Applicable only for MEMBERDB and MEMBERAPP cluster configuration
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.memberClusterManifestFile=
-
+oracle.install.crs.config.memberClusterManifestFile=<oracle.install.crs.config.memberClusterManifestFile>
 #-------------------------------------------------------------------------------
 # Specify a name for the Cluster you are creating.
 #
@@ -175,21 +174,21 @@ oracle.install.crs.config.memberClusterManifestFile=
 #
 # Applicable only for STANDALONE and DOMAIN cluster configuration
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.clusterName=
+oracle.install.crs.config.clusterName=<oracle.install.crs.config.clusterName>
 
 #-------------------------------------------------------------------------------
 # Applicable only for STANDALONE, DOMAIN, MEMBERDB cluster configuration.
 # Specify 'true' if you would like to configure Grid Naming Service(GNS), else
 # specify 'false'
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.gpnp.configureGNS=
+oracle.install.crs.config.gpnp.configureGNS=<oracle.install.crs.config.gpnp.configureGNS>
 
 #-------------------------------------------------------------------------------
 # Applicable only for STANDALONE and DOMAIN cluster configuration if you choose to configure GNS.
 # Specify 'true' if you would like to assign SCAN name VIP and Node VIPs by DHCP
 # , else specify 'false'
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.autoConfigureClusterNodeVIP=
+oracle.install.crs.config.autoConfigureClusterNodeVIP=<oracle.install.crs.config.autoConfigureClusterNodeVIP>
 
 #-------------------------------------------------------------------------------
 # Applicable only if you choose to configure GNS.
@@ -197,26 +196,26 @@ oracle.install.crs.config.autoConfigureClusterNodeVIP=
 # Allowed values are: CREATE_NEW_GNS and USE_SHARED_GNS
 # Only USE_SHARED_GNS value is allowed for MEMBERDB cluster configuration.
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.gpnp.gnsOption=
+oracle.install.crs.config.gpnp.gnsOption=<oracle.install.crs.config.gpnp.gnsOption>
 
 #-------------------------------------------------------------------------------
 # Applicable only if SHARED_GNS is being configured for cluster
 # Specify the path to the GNS client data file
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.gpnp.gnsClientDataFile=
+oracle.install.crs.config.gpnp.gnsClientDataFile=<oracle.install.crs.config.gpnp.gnsClientDataFile>
 
 #-------------------------------------------------------------------------------
 # Applicable only for STANDALONE and DOMAIN cluster configuration if you choose to
 # configure GNS for this cluster oracle.install.crs.config.gpnp.gnsOption=CREATE_NEW_GNS
 # Specify the GNS subdomain and an unused virtual hostname for GNS service
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.gpnp.gnsSubDomain=
-oracle.install.crs.config.gpnp.gnsVIPAddress=
+oracle.install.crs.config.gpnp.gnsSubDomain=<oracle.install.crs.config.gpnp.gnsSubDomain>
+oracle.install.crs.config.gpnp.gnsVIPAddress=<oracle.install.crs.config.gpnp.gnsVIPAddress>
 
 #-------------------------------------------------------------------------------
 # Specify the list of sites - only if configuring an Extended Cluster
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.sites=
+oracle.install.crs.config.sites=<oracle.install.crs.config.sites>
 
 #-------------------------------------------------------------------------------
 # Specify the list of nodes that have to be configured to be part of the cluster.
@@ -248,7 +247,7 @@ oracle.install.crs.config.sites=
 # hostnameprefix:lowerbound-upperbound:hostnamesuffix:vipsuffix:role of node
 #
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.clusterNodes=
+oracle.install.crs.config.clusterNodes=<oracle.install.crs.config.clusterNodes>
 
 #-------------------------------------------------------------------------------
 # The value should be a comma separated strings where each string is as shown below
@@ -264,7 +263,7 @@ oracle.install.crs.config.clusterNodes=
 # For example: eth0:140.87.24.0:1,eth1:10.2.1.0:2,eth2:140.87.52.0:3
 #
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.networkInterfaceList=
+oracle.install.crs.config.networkInterfaceList=<oracle.install.crs.config.networkInterfaceList>
 
 #------------------------------------------------------------------------------
 # Specify 'true' if you would like to configure Grid Infrastructure Management
@@ -272,7 +271,7 @@ oracle.install.crs.config.networkInterfaceList=
 # This option is only applicable when CRS_CONFIG is chosen as install option,
 # and STANDALONE is chosen as cluster configuration.
 #------------------------------------------------------------------------------
-oracle.install.crs.configureGIMR=
+oracle.install.crs.configureGIMR=<oracle.install.crs.configureGIMR>
 
 #------------------------------------------------------------------------------
 # Create a separate ASM DiskGroup to store GIMR data.
@@ -281,7 +280,7 @@ oracle.install.crs.configureGIMR=
 # Value should be 'true' for DOMAIN cluster configurations
 # Value can be true/false for STANDALONE cluster configurations.
 #------------------------------------------------------------------------------
-oracle.install.asm.configureGIMRDataDG=
+oracle.install.asm.configureGIMRDataDG=<oracle.install.asm.configureGIMRDataDG>
 
 ################################################################################
 #                                                                              #
@@ -298,7 +297,7 @@ oracle.install.asm.configureGIMRDataDG=
 #
 # Option FILE_SYSTEM_STORAGE is only for STANDALONE cluster configuration.
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.storageOption=
+oracle.install.crs.config.storageOption=<oracle.install.crs.config.storageOption>
 
 #-------------------------------------------------------------------------------
 # These properties are applicable only if FILE_SYSTEM_STORAGE is chosen for
@@ -312,8 +311,8 @@ oracle.install.crs.config.storageOption=
 #     oracle.install.crs.config.sharedFileSystemStorage.ocrLocations=/oradbocfs/storage/ocr1,/oradbocfs/storage/ocr2,/oradbocfs/storage/ocr3
 #     For Windows based Operating System OCR/VDSK on shared storage is not supported.
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.sharedFileSystemStorage.votingDiskLocations=
-oracle.install.crs.config.sharedFileSystemStorage.ocrLocations=
+oracle.install.crs.config.sharedFileSystemStorage.votingDiskLocations=oracle.install.crs.config.sharedFileSystemStorage.votingDiskLocations>
+oracle.install.crs.config.sharedFileSystemStorage.ocrLocations=<oracle.install.crs.config.sharedFileSystemStorage.votingDiskLocations>
 ################################################################################
 #                                                                              #
 #                               SECTION F - IPMI                               #
@@ -324,15 +323,15 @@ oracle.install.crs.config.sharedFileSystemStorage.ocrLocations=
 # Specify 'true' if you would like to configure Intelligent Power Management interface
 # (IPMI), else specify 'false'
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.useIPMI=
+oracle.install.crs.config.useIPMI=<oracle.install.crs.config.useIPMI>
 
 #-------------------------------------------------------------------------------
 # Applicable only if you choose to configure IPMI
 # i.e. oracle.install.crs.config.useIPMI=true
 # Specify the username and password for using IPMI service
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.ipmi.bmcUsername=
-oracle.install.crs.config.ipmi.bmcPassword=
+oracle.install.crs.config.ipmi.bmcUsername=<oracle.install.crs.config.ipmi.bmcUsername>
+oracle.install.crs.config.ipmi.bmcPassword=<oracle.install.crs.config.ipmi.bmcPassword>
 ################################################################################
 #                                                                              #
 #                                SECTION G - ASM                               #
@@ -343,7 +342,7 @@ oracle.install.crs.config.ipmi.bmcPassword=
 #-------------------------------------------------------------------------------
 # Password for SYS user of Oracle ASM
 #-------------------------------------------------------------------------------
-oracle.install.asm.SYSASMPassword=
+oracle.install.asm.SYSASMPassword=<oracle.install.asm.SYSASMPassword>
 
 #-------------------------------------------------------------------------------
 # The ASM DiskGroup
@@ -351,7 +350,7 @@ oracle.install.asm.SYSASMPassword=
 # Example: oracle.install.asm.diskGroup.name=data
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.diskGroup.name=
+oracle.install.asm.diskGroup.name=<oracle.install.asm.diskGroup.name>
 
 #-------------------------------------------------------------------------------
 # Redundancy level to be used by ASM.
@@ -363,7 +362,7 @@ oracle.install.asm.diskGroup.name=
 # Example: oracle.install.asm.diskGroup.redundancy=NORMAL
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.diskGroup.redundancy=
+oracle.install.asm.diskGroup.redundancy=<oracle.install.asm.diskGroup.redundancy>
 
 #-------------------------------------------------------------------------------
 # Allocation unit size to be used by ASM.
@@ -377,7 +376,7 @@ oracle.install.asm.diskGroup.redundancy=
 # size unit is MB
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.diskGroup.AUSize=
+oracle.install.asm.diskGroup.AUSize=<oracle.install.asm.diskGroup.AUSize>
 
 #-------------------------------------------------------------------------------
 # Failure Groups for the disk group
@@ -385,7 +384,7 @@ oracle.install.asm.diskGroup.AUSize=
 # tuples.
 # Else just specify as list of failure group names
 #-------------------------------------------------------------------------------
-oracle.install.asm.diskGroup.FailureGroups=
+oracle.install.asm.diskGroup.FailureGroups=<oracle.install.asm.diskGroup.FailureGroups>
 
 #-------------------------------------------------------------------------------
 # List of disks and their failure groups to create a ASM DiskGroup
@@ -398,7 +397,7 @@ oracle.install.asm.diskGroup.FailureGroups=
 #     oracle.install.asm.diskGroup.disksWithFailureGroupNames=\\.\ORCLDISKDATA0,FGName,\\.\ORCLDISKDATA1,FGName
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.diskGroup.disksWithFailureGroupNames=
+oracle.install.asm.diskGroup.disksWithFailureGroupNames=<oracle.install.asm.diskGroup.disksWithFailureGroupNames>
 
 #-------------------------------------------------------------------------------
 # List of disks to create a ASM DiskGroup
@@ -410,7 +409,7 @@ oracle.install.asm.diskGroup.disksWithFailureGroupNames=
 #     oracle.install.asm.diskGroup.disks=\\.\ORCLDISKDATA0,\\.\ORCLDISKDATA1
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.diskGroup.disks=
+oracle.install.asm.diskGroup.disks=<oracle.install.asm.diskGroup.disks>
 
 #-------------------------------------------------------------------------------
 # List of failure groups to be marked as QUORUM.
@@ -418,7 +417,7 @@ oracle.install.asm.diskGroup.disks=
 # Example:
 #       oracle.install.asm.diskGroup.quorumFailureGroupNames=FGName1,FGName2
 #-------------------------------------------------------------------------------
-oracle.install.asm.diskGroup.quorumFailureGroupNames=
+oracle.install.asm.diskGroup.quorumFailureGroupNames=<oracle.install.asm.diskGroup.quorumFailureGroupNames>
 #-------------------------------------------------------------------------------
 # The disk discovery string to be used to discover the disks used create a ASM DiskGroup
 #
@@ -429,13 +428,13 @@ oracle.install.asm.diskGroup.quorumFailureGroupNames=
 #     oracle.install.asm.diskGroup.diskDiscoveryString=\\.\ORCLDISK*
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.diskGroup.diskDiscoveryString=
+oracle.install.asm.diskGroup.diskDiscoveryString=<oracle.install.asm.diskGroup.diskDiscoveryString>
 
 #-------------------------------------------------------------------------------
 # Password for ASMSNMP account
 # ASMSNMP account is used by Oracle Enterprise Manager to monitor Oracle ASM instances
 #-------------------------------------------------------------------------------
-oracle.install.asm.monitorPassword=
+oracle.install.asm.monitorPassword=<oracle.install.asm.monitorPassword>
 
 #-------------------------------------------------------------------------------
 # GIMR Storage data ASM DiskGroup
@@ -444,7 +443,7 @@ oracle.install.asm.monitorPassword=
 # Example: oracle.install.asm.GIMRDG.name=MGMT
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.gimrDG.name=
+oracle.install.asm.gimrDG.name=<oracle.install.asm.gimrDG.name>
 
 #-------------------------------------------------------------------------------
 # Redundancy level to be used by ASM.
@@ -456,7 +455,7 @@ oracle.install.asm.gimrDG.name=
 # Example: oracle.install.asm.gimrDG.redundancy=NORMAL
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.gimrDG.redundancy=
+oracle.install.asm.gimrDG.redundancy=<oracle.install.asm.gimrDG.redundancy>
 
 #-------------------------------------------------------------------------------
 # Allocation unit size to be used by ASM.
@@ -470,7 +469,7 @@ oracle.install.asm.gimrDG.redundancy=
 # size unit is MB
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.gimrDG.AUSize=
+oracle.install.asm.gimrDG.AUSize=<oracle.install.asm.gimrDG.AUSize>
 
 #-------------------------------------------------------------------------------
 # Failure Groups for the GIMR storage data ASM disk group
@@ -478,7 +477,7 @@ oracle.install.asm.gimrDG.AUSize=
 # tuples.
 # Else just specify as list of failure group names
 #-------------------------------------------------------------------------------
-oracle.install.asm.gimrDG.FailureGroups=
+oracle.install.asm.gimrDG.FailureGroups=<oracle.install.asm.gimrDG.FailureGroups>
 
 #-------------------------------------------------------------------------------
 # List of disks and their failure groups to create GIMR data ASM DiskGroup
@@ -491,7 +490,7 @@ oracle.install.asm.gimrDG.FailureGroups=
 #     oracle.install.asm.gimrDG.disksWithFailureGroupNames=\\.\ORCLDISKDATA0,FGName,\\.\ORCLDISKDATA1,FGName
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.gimrDG.disksWithFailureGroupNames=
+oracle.install.asm.gimrDG.disksWithFailureGroupNames=<oracle.install.asm.gimrDG.disksWithFailureGroupNames>
 
 #-------------------------------------------------------------------------------
 # List of disks to create GIMR data ASM DiskGroup
@@ -503,7 +502,7 @@ oracle.install.asm.gimrDG.disksWithFailureGroupNames=
 #     oracle.install.asm.gimrDG.disks=\\.\ORCLDISKDATA0,\\.\ORCLDISKDATA1
 #
 #-------------------------------------------------------------------------------
-oracle.install.asm.gimrDG.disks=
+oracle.install.asm.gimrDG.disks=<oracle.install.asm.gimrDG.disks>
 
 #-------------------------------------------------------------------------------
 # List of failure groups to be marked as QUORUM.
@@ -511,20 +510,20 @@ oracle.install.asm.gimrDG.disks=
 # Example:
 #       oracle.install.asm.gimrDG.quorumFailureGroupNames=FGName1,FGName2
 #-------------------------------------------------------------------------------
-oracle.install.asm.gimrDG.quorumFailureGroupNames=
+oracle.install.asm.gimrDG.quorumFailureGroupNames=<oracle.install.asm.gimrDG.quorumFailureGroupNames>
 
 #-------------------------------------------------------------------------------
 # Configure AFD - ASM Filter Driver
 # Applicable only for FLEX_ASM_STORAGE option
 # Specify 'true' if you want to configure AFD, else specify 'false'
 #-------------------------------------------------------------------------------
-oracle.install.asm.configureAFD=
+oracle.install.asm.configureAFD=<oracle.install.asm.configureAFD>
 #-------------------------------------------------------------------------------
 # Configure RHPS - Rapid Home Provisioning Service
 # Applicable only for DOMAIN cluster configuration
 # Specify 'true' if you want to configure RHP service, else specify 'false'
 #-------------------------------------------------------------------------------
-oracle.install.crs.configureRHPS=
+oracle.install.crs.configureRHPS=<oracle.install.crs.configureRHPS>
 
 ################################################################################
 #                                                                              #
@@ -535,7 +534,7 @@ oracle.install.crs.configureRHPS=
 # Specify whether to ignore down nodes during upgrade operation.
 # Value should be 'true' to ignore down nodes otherwise specify 'false'
 #-------------------------------------------------------------------------------
-oracle.install.crs.config.ignoreDownNodes=
+oracle.install.crs.config.ignoreDownNodes=<oracle.install.crs.config.ignoreDownNodes>
 ################################################################################
 #                                                                              #
 #                               MANAGEMENT OPTIONS                             #
@@ -548,31 +547,31 @@ oracle.install.crs.config.ignoreDownNodes=
 # 1. CLOUD_CONTROL - If you want to manage your Oracle Grid Infrastructure with Enterprise Manager Cloud Control.
 # 2. NONE   -If you do not want to manage your Oracle Grid Infrastructure with Enterprise Manager Cloud Control.
 #-------------------------------------------------------------------------------
-oracle.install.config.managementOption=
+oracle.install.config.managementOption=<oracle.install.config.managementOption>
 
 #-------------------------------------------------------------------------------
 # Specify the OMS host to connect to Cloud Control.
 # Applicable only when oracle.install.config.managementOption=CLOUD_CONTROL
 #-------------------------------------------------------------------------------
-oracle.install.config.omsHost=
+oracle.install.config.omsHost=<oracle.install.config.omsHost>
 
 #-------------------------------------------------------------------------------
 # Specify the OMS port to connect to Cloud Control.
 # Applicable only when oracle.install.config.managementOption=CLOUD_CONTROL
 #-------------------------------------------------------------------------------
-oracle.install.config.omsPort=
+oracle.install.config.omsPort=<oracle.install.config.omsPort>
 
 #-------------------------------------------------------------------------------
 # Specify the EM Admin user name to use to connect to Cloud Control.
 # Applicable only when oracle.install.config.managementOption=CLOUD_CONTROL
 #-------------------------------------------------------------------------------
-oracle.install.config.emAdminUser=
+oracle.install.config.emAdminUser=<oracle.install.config.emAdminUser>
 
 #-------------------------------------------------------------------------------
 # Specify the EM Admin password to use to connect to Cloud Control.
 # Applicable only when oracle.install.config.managementOption=CLOUD_CONTROL
 #-------------------------------------------------------------------------------
-oracle.install.config.emAdminPassword=
+oracle.install.config.emAdminPassword=<oracle.install.config.emAdminPassword>
 ################################################################################
 #                                                                              #
 #                      Root script execution configuration                     #
@@ -587,7 +586,7 @@ oracle.install.config.emAdminPassword=
 #
 # If this option is selected, password should be specified on the console.
 #-------------------------------------------------------------------------------------------------------
-oracle.install.crs.rootconfig.executeRootScript=
+oracle.install.crs.rootconfig.executeRootScript=<oracle.install.crs.rootconfig.executeRootScript>
 
 #--------------------------------------------------------------------------------------
 # Specify the configuration method to be used for automatic root script execution.
@@ -596,20 +595,20 @@ oracle.install.crs.rootconfig.executeRootScript=
 #   - ROOT
 #   - SUDO
 #--------------------------------------------------------------------------------------
-oracle.install.crs.rootconfig.configMethod=
+oracle.install.crs.rootconfig.configMethod=<oracle.install.crs.rootconfig.configMethod>
 #--------------------------------------------------------------------------------------
 # Specify the absolute path of the sudo program.
 #
 # Applicable only when SUDO configuration method was chosen.
 #--------------------------------------------------------------------------------------
-oracle.install.crs.rootconfig.sudoPath=
+oracle.install.crs.rootconfig.sudoPath=<oracle.install.crs.rootconfig.sudoPath>
 
 #--------------------------------------------------------------------------------------
 # Specify the name of the user who is in the sudoers list.
 # Applicable only when SUDO configuration method was chosen.
 # Note:For Grid Infrastructure for Standalone server installations,the sudo user name must be the username of the user performing the installation.
 #--------------------------------------------------------------------------------------
-oracle.install.crs.rootconfig.sudoUserName=
+oracle.install.crs.rootconfig.sudoUserName=<oracle.install.crs.rootconfig.sudoUserName>
 #--------------------------------------------------------------------------------------
 # Specify the nodes batch map.
 #
@@ -628,7 +627,7 @@ oracle.install.crs.rootconfig.sudoUserName=
 #
 # Applicable only for UPGRADE install option.
 #--------------------------------------------------------------------------------------
-oracle.install.crs.config.batchinfo=
+oracle.install.crs.config.batchinfo=<oracle.install.crs.config.batchinfo>
 ################################################################################
 #                                                                              #
 #                           APPLICATION CLUSTER OPTIONS                        #
@@ -639,7 +638,7 @@ oracle.install.crs.config.batchinfo=
 # Specify the Virtual hostname to configure virtual access for your Application
 # The value to be specified for Virtual hostname is optional.
 #-------------------------------------------------------------------------------
-oracle.install.crs.app.applicationAddress=
+oracle.install.crs.app.applicationAddress=<oracle.install.crs.app.applicationAddress>
 #################################################################################
 #                                                                               #
 #                           DELETE NODE OPTIONS                                 #
@@ -650,4 +649,4 @@ oracle.install.crs.app.applicationAddress=
 # Specify the node names to delete nodes from cluster.
 # Delete node will be performed only for the remote nodes from the cluster.
 #--------------------------------------------------------------------------------
-oracle.install.crs.deleteNode.nodes=
+oracle.install.crs.deleteNode.nodes=<oracle.install.crs.deleteNode.nodes>
